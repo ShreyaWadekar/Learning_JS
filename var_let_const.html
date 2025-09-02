@@ -11,17 +11,53 @@
         var fname="priya";//redeclare allowe
         fname="shreya";//re-assign allowe
         document.write(fname);
+        document.write("<br>");
 
 
         let lname="sushant";
         //let lname="priya"; redeclare  not allowe
         lname="wadekar";//re-assign allowe
         document.write(lname);
+        document.write("<br>");
 
         const roll_no="01";
         //const roll_no="priya"; redeclare not allowe
         //roll_no="shreya"; re-assign not allowe
         document.write(roll_no);
+    </script>
+
+    <script>
+        //Global Scope
+            var x=101;
+            let y=102;
+            const z=103;
+            document.write("<br>");
+            function scopeExample(){
+            var x=1; //function scope
+            let y=2; //block scope
+            const z=3; //block
+           if(true) //inside the block
+           {
+            var x=10; //reassign x (function scoped)
+            let y=20; //y only for this block
+            const z=30; //z only for this block
+            document.write(x); //10
+            document.write(y); //20
+            document.write(z); //30
+            document.write("<br>"); //10 20 30
+           }
+            //outsite the  block but inside the function
+            document.write(x); //10
+            document.write(y); //2
+            document.write(z); //3
+            document.write("<br>"); //10 2 3
+        }
+        //call function
+         scopeExample();
+            document.write(x);
+            document.write(y);
+            document.write(z);
+            document.write("<br>");
     </script>
 </body>
 </html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <!-- aritmatic operator= +,-,*,/,%,++,--,** -->
+    <script>
+        var a =10;
+        var b= 3;
+        var c= a+b; //13
+        c++;
+        c--;
+        c++;
+        c++;
+        c--; //14
+        document.write(c); //14
+        document.write("<br>");
+
+        var c= a*b; //30
+        c++;
+        c--;
+        c++;
+        c++;
+        c--;//31
+        document.write(c); //31
+        document.write("<br>");
+
+        var c= a/b; // 3.333
+        c++;
+        c--;
+        c++;
+        c++;
+        c--;//4.33
+        document.write(c); //4.33
+        document.write("<br>");
+
+        var c= a-b; //7
+        c++;
+        c--;
+        c++;
+        c++;
+        c--;//8
+        document.write(c); //8
+        document.write("<br>");
+
+        var c= a%b; //1
+        c++;
+        c--;
+        c++;
+        c++;
+        c--;//2
+        document.write(c); //2
+        document.write("<br>");
+
+        var c= a**b; //1000
+        c++;
+        c--;
+        c++;
+        c++;
+        c--;//1001
+        document.write(c); //1001
+        document.write("<br>");
+        
+    </script>
+    <!-- assignment operator =,+=,-=,*=,**=,%= -->
+    <script>
+        var x=10;
+        var y=3;
+        x+=y;
+        document.write(x); 
+        document.write("<br>");
+        document.write(x); 
+        document.write("<br>");
+    </script>
+    <!-- comparison operator ==,===,<,>,<=,>=,!= -->
+     <script>
+        var p=13;
+        var q="13";
+        if(p==q){
+            document.write("true"); 
+            document.write("<br>");
+        }
+        else{
+            document.write("false"); 
+            document.write("<br>");
+        }
+
+        var p=13;
+        var q="13";
+        if(p===q){
+            document.write("true"); 
+            document.write("<br>");
+        }
+        else{
+            document.write("false"); 
+            document.write("<br>");
+        }
+
+        var p=13;
+        var q=13;
+        if(p==q){
+            document.write("true"); 
+            document.write("<br>");
+        }
+        else{
+            document.write("false"); 
+            document.write("<br>");
+        }
+
+        var p=13;
+        var q="13";
+        if(p<q){
+            document.write("true"); 
+            document.write("<br>");
+        }
+        else{
+            document.write("false"); 
+            document.write("<br>");
+        }
+
+        var p=13;
+        var q="13";
+        if(p>q){
+            document.write("true"); 
+            document.write("<br>");
+        }
+        else{
+            document.write("false"); 
+            document.write("<br>");
+        }
+
+        var p=13;
+        var q="13";
+        if(p<=q){
+            document.write("true"); 
+            document.write("<br>");
+        }
+        else{
+            document.write("false"); 
+            document.write("<br>");
+        }
+
+        var p=13;
+        var q="13";
+        if(p!=q){
+            document.write("true"); 
+            document.write("<br>");
+        }
+        else{
+            document.write("false"); 
+            document.write("<br>");
+        }
+
+        var p=13;
+        var q="13";
+        if(p!==q){
+            document.write("true"); 
+            document.write("<br>");
+        }
+        else{
+            document.write("false"); 
+            document.write("<br>");
+        }
+     </script>
+     <!-- Logical operator &&, || ,xor -->
+      <script>
+        var age=19;
+        if(age>=18 && age<=100){
+            document.write("elegible for vote");
+            document.write("<br>");
+        }else{
+            document.write(" Not elegible for vote");
+            document.write("<br>");
+        }
+
+        var day="sunday";
+        if(day=="saturday" || day=="sunday"){
+            document.write("Its weekend");
+            document.write("<br>");
+        }else{
+            document.write("Its weekdays");
+            document.write("<br>");
+        }
+        // terminal operator
+        var age=19;
+        var eligibility=(age>=18)?"elegible for vote" : "Not elegible";;
+        document.write(eligibility);
+      </script>
+</body>
+</html>
