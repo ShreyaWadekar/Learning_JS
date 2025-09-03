@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <script>
+        var mixArray = [100,"Shreya",true,89.27];
+        var mixArray2 = [101,"Pratiksha",true,99.27];
+        document.write("<b>My Details</b> <br>" + mixArray +"<br>" + mixArray2);
+    </script>
+<!-- For loop -->
+    <script>
+        var array=[10,20,30,40,50];
+        sum=0;
+        document.write("<h2>Using For loop</h2> <ul>")
+        for( var i=0;i<=4;i++)
+    {
+        document.write("<li>" +array[i] +"</li>")
+        sum=sum+array[i];
+    }
+    document.write("</ul>")
+    document.write("Total sum of array = " + sum + "<hr>")
+    </script>
+<!-- while loop -->
+    <script>
+        var array=[10,20,30,40,50];
+        sub=0;
+        var j=0;
+        document.write("<h2>Using For loop</h2> <ul>")
+            while(j<=4){
+                 document.write("<li>" +array[j] +"</li>")
+                sub=sub+array[j];
+                j++;
+            }
+            document.write("</ul>")
+            document.write("Total sum of array = " + sub + "<hr>")
+    </script>
+    <!-- Do-While loop -->
+     <script>
+        var array=[10,20,30,40,50];
+        res=0;
+        var z=0;
+        document.write("<h2>Using For loop</h2> <ul>")
+        do{
+            document.write("<li>" +array[z] +"</li>")
+                res=res+array[z];
+                z++;
+        }while(z<=5)
+        document.write("</ul>")
+        document.write("Total sum of array = " + res + "<hr>")
+
+     </script>
+</body>
+</html>

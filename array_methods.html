@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= ["Shreya",20,"BCA","Student"];
+        document.write(a + "<br>");
+        a[2]="MCA";
+        document.write(a + "<br>");
+        delete a[1];
+        document.write(a + "<br>");
+
+    </script>
+<!-- string assending and dessending -->
+    <script>
+        var b=["Shreya","Pratiksha","Sushant","Aniket","Priya","Aparna","Sneha","Divyani","mayuri"];
+        document.write(b + "<br>");
+        b.sort();
+        document.write(b + "<br>");
+        b.reverse();
+        document.write(b +"<br>");
+    </script>
+    <!-- push and pop -->
+    <script>
+        var c=["Shreya","Pratiksha","Sushant","Aniket","Priya","Aparna","Sneha","Divyani","mayuri"];
+        document.write(c + "<br>");
+        c.pop();
+        c.pop();
+        document.write(c + "<br>");
+        c.push("divya");
+        document.write(c + "<br>");
+    </script>
+<!-- Shift and unshift -->
+    <script>
+        var d=["Shreya","Pratiksha","Sushant","Aniket","Priya","Aparna","Sneha","Divyani","mayuri"];
+        document.write(d + "<br>");
+        d.shift();
+        document.write(d + "<br>");
+        d.unshift("divya");
+        d.unshift("Bhakti");
+        document.write(d + "<br>");
+    </script>
+<!-- concat -->
+    <script>
+        var e=["Shreya","Pratiksha","Sushant"];
+        var f=["Aniket","Priya","Aparna"];
+        var g=e.concat(f);
+        document.write(g + "<br>");
+        var h=g.join("/");
+        document.write(h + "<br>");
+    </script>
+<!-- there array concat -->
+    <script>
+        var a=["Priya","Aparna"];
+        var b=["Sneha","Divyani"];
+        var c=["Shreya","Sushant"];
+        var d=a.concat(b,c);
+        document.write(d + "<br>");
+        var e=d.join("/");
+        document.write(e + "<br>");
+    </script>
+</body>
+</html>
